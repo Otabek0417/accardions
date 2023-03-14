@@ -29,7 +29,9 @@ function App() {
     <div className="App container">
       <h1>Questions</h1>
       {list.map((item) => {
-        return <Accardion title={item.title} text={item.text} />;
+        return (
+          <Accardion key={item.title} title={item.title} text={item.text} />
+        );
       })}
     </div>
   );

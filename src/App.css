@@ -45,33 +45,36 @@ h1 {
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   margin-bottom: 3.2rem;
   padding: 16px 24px;
+  transition: all 0.3s;
 }
-
+.accardion:hover {
+  box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+}
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 h2 {
+  display: block;
   font-weight: 500;
   color: #334155;
   font-size: 20px;
 }
 .quest-btn {
-  background: transparent;
-  border-color: transparent;
-  width: 3.2rem;
-  height: 3.2rem;
-  font-size: 2rem;
-  background: #164e63;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  max-width: 3.2rem;
+  height: 3.2rem;
+  background: transparent;
+  border-color: transparent;
+  background: #164e63;
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
-  align-self: flex-start;
-  min-width: 2rem;
 }
 p {
   color: #64748b;
